@@ -194,11 +194,15 @@ i{
 @media screen and (max-width:576px) {
     .navbar,
     .nav-links,
-    .journey,
-    .collections-container, 
-    .feature{
+    .collections-container
+    {
        flex-direction: column;
        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .journey, .feature{
+        flex-direction: column-reverse;
+        grid-template-columns: repeat(1, 1fr);
     }
     .collection>img{
         width: 100%;
